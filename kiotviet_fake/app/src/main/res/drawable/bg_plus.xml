@@ -1,0 +1,10 @@
+<!-- bg_circle.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Main Layer -->
+    <item android:bottom="2dp" android:right="2dp" android:left="2dp" android:top="2dp">
+        <shape android:shape="oval">
+            <solid android:color="#3366FF"/>
+            <corners android:radius="300dp"/>
+        </shape>
+    </item>
+</layer-list>

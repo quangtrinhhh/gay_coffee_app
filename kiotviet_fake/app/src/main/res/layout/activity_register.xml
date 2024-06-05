@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        tools:context=".activities.RegisterActivity">
+
+
+        <ImageView
+            android:id="@+id/GoBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/baseline_chevron_left_24" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Tạo tài khoản dùng thử miễn phí"
+            android:textColor="@color/black"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/titleTenGianHang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+
+                    <EditText
+                        android:id="@+id/TenGianHang"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:background="@drawable/radius_input"
+                        android:ems="10"
+                        android:hint="Tên gian hàng"
+                        android:inputType="text"
+                        android:paddingStart="20dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#979797"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:id="@+id/txtErrorTenGianHang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/exclamation" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:text="Nhập địa chỉ gian hàng"
+                            android:textColor="#FF0000"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/txtFocusTenGianHang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:paddingHorizontal="4dp"
+                    android:text="Tên gian hàng"
+                    android:textColor="#C5C5C5"
+                    android:textSize="12dp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/titleTenDangNhap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleTenGianHang">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+
+                    <EditText
+                        android:id="@+id/TenDangNhap"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:background="@drawable/radius_input"
+                        android:ems="10"
+                        android:hint="Tên đăng nhập"
+                        android:inputType="text"
+                        android:paddingStart="15dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#979797"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:id="@+id/txtErrorTenDangNhap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/exclamation" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:text="Nhập tên đăng nhập"
+                            android:textColor="#FF0000"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtFocusTenDangNhap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:paddingHorizontal="4dp"
+                    android:text="Tên đăng nhập"
+                    android:textColor="#C5C5C5"
+                    android:textSize="12dp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/titleMatKhau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleTenDangNhap">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="10dp">
+
+                    <EditText
+                        android:id="@+id/MatKhau"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:background="@drawable/radius_input"
+                        android:ems="10"
+                        android:hint="Mật khẩu"
+                        android:inputType="textPassword"
+                        android:paddingStart="20dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#979797"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:id="@+id/txtErrorMatKhau"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/exclamation" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:text="Nhập mật khẩu"
+                            android:textColor="#FF0000"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtFocusMatKhau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:paddingHorizontal="4dp"
+                    android:text="Mật khẩu"
+                    android:textColor="#C5C5C5"
+                    android:textSize="12dp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="Bằng cánh nhấn nút đăng ký bạn đã  đồng ý với "
+            android:textColor="#7C7C7C"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Điều khoản và chính sách sử dụng"
+            android:textColor="#3366CC"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonDangKy"
+            android:layout_width="350dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg_submit_login"
+            android:text="Đăng ký"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_loading"
+        android:padding="180dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

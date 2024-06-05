@@ -1,0 +1,52 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/PhongBan"
+            android:icon="@drawable/baseline_grid_view_24"
+            android:title="Phòng bàn" />
+        <item
+            android:id="@+id/DongBo"
+            android:icon="@drawable/baseline_sync_24"
+            android:title="Đồng bộ dữ liệu" />
+        <item
+            android:id="@+id/ThongBaoBep"
+            android:icon="@drawable/outline_notifications_24"
+            android:title="Thông báo từ bếp" />
+        <item
+            android:id="@+id/BaoCaoCuoiNgay"
+            android:icon="@drawable/baseline_app_registration_24"
+            android:title="Báo cáo cuối ngày" />
+        <item
+            android:id="@+id/QuanLy"
+            android:icon="@drawable/outline_insert_chart_outlined_24"
+            android:title="Quản lý" />
+        <item
+            android:id="@+id/ThietLap"
+            android:icon="@drawable/baseline_settings_24"
+            android:title="Thiết lập" />
+        <item
+            android:id="@+id/HuongDan"
+            android:icon="@drawable/baseline_question_mark_24"
+            android:title="Hướng dẫn sử dụng" />
+        <item
+            android:id="@+id/DieuKhoan"
+            android:icon="@drawable/baseline_warning_amber_24"
+            android:title="Điều khoản" />
+        <item
+            android:id="@+id/HoTro"
+            android:icon="@drawable/outline_phone_24"
+            android:title="Hỗ trợ 1900 6522"
+            />
+        <item
+            android:id="@+id/NgonNgu"
+            android:icon="@drawable/baseline_language_24"
+            android:title="Ngôn ngữ" />
+        <item
+            android:id="@+id/DangXuat"
+            android:icon="@drawable/baseline_logout_24"
+            android:title="Đăng xuất" />
+    </group>
+</menu>

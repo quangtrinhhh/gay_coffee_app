@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="7dp" /> <!-- Bo tròn góc với bán kính 17dp -->
+    <padding android:left="7dp"
+        android:top="7dp"
+        android:right="7dp"
+        android:bottom="7dp" /> <!-- Padding cho shape -->
+</shape>

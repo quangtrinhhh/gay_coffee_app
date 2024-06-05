@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:id="@+id/lnl.item">
+
+    <TextView
+        android:id="@+id/tv.nameTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BÀN 1"
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:paddingHorizontal="40dp"
+        android:textSize="17dp" />
+
+    <ImageView
+        android:id="@+id/iv.iconCheck"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/check_1"
+        app:tint="#838383"
+        />
+</LinearLayout>

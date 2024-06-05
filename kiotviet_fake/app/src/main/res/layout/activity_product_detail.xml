@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProductDetailActivity">
+
+    <LinearLayout
+        android:id="@+id/container_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/progressBar"
+        tools:context=".activities.OrderProductActivity">
+
+        <LinearLayout
+            android:id="@+id/container_order_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/btnCancel"
+                android:layout_width="33dp"
+                android:layout_height="25dp"
+                android:src="@drawable/close" />
+
+            <TextView
+                android:id="@+id/idProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="SP000014"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F6F6F6"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:padding="15dp">
+                <RelativeLayout
+                    android:id="@+id/imgProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bg_restaurant"
+                        android:src="@drawable/restaurant" />
+
+                    <ImageView
+                        android:id="@+id/imgCheck"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/bg_restaurant_check"
+                        android:src="@drawable/check"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23dp"
+                        android:text="Matcha thạch đá xay"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="15dp"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtName"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginTop="15dp"
+                        android:text="30,000"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingHorizontal="17dp"
+                android:paddingVertical="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Giảm giá"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/edtGiamGia"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColorHint="@color/black_overlay"
+                    android:hint="Giảm giá (%)"
+                    android:textStyle="bold"
+                    android:background="@drawable/bg_icon_count"
+                    android:textSize="17dp"
+                    android:padding="10dp"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingHorizontal="17dp"
+                android:paddingVertical="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Giá bán"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/EdtPrice"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="30,000"
+                    android:textStyle="bold"
+                    android:background="@drawable/bg_icon_count"
+                    android:textSize="17dp"
+                    android:padding="10dp"
+                    android:inputType="number"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/container_order_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="17dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/giam"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/bg_icon_count"
+                        android:padding="8dp"
+                        android:src="@drawable/minus_24"
+                        android:layout_marginRight="25dp"/>
+
+                    <EditText
+                        android:id="@+id/quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+                    <ImageView
+                        android:id="@+id/tang"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="8dp"
+                        android:background="@drawable/bg_icon_count"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/plus_24"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="end"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+                        android:layout_gravity="center"
+                        android:text="30,000"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLuuSanPham"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn"
+                android:backgroundTint="@color/tabselect"
+                android:gravity="center"
+                android:text="Lưu lại"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="180dp"
+        android:background="@drawable/bg_loading"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_bao_cao_cuoi_ngay"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv.name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="5dp"
+        android:text="Trà sửa truyền thống"
+        android:textColor="#323232"
+        android:textSize="17dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv.count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingHorizontal="18dp"
+            android:paddingVertical="5dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tv.quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingVertical="5dp"
+            android:text="/ 0"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/iv.giam"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:padding="8dp"
+            android:src="@drawable/minus_24"
+            app:tint="#388FE8" />
+
+        <ImageView
+            android:id="@+id/iv.tang"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="18dp"
+            android:padding="8dp"
+            android:src="@drawable/plus_24"
+            app:tint="#388FE8" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+</LinearLayout>

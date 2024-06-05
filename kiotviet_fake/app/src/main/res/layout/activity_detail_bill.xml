@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical"
+    tools:context=".activities.DetailBillActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Phần 1: Header -->
+
+        <LinearLayout
+            android:id="@+id/container_order_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/goback"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/tv.code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="12323"
+                android:textColor="@color/black"
+                android:textSize="19dp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <!-- Phần 2: Tiêu đề -->
+        <TextView
+            android:id="@+id/tv.title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp"
+            android:text="CHI TIẾT HOÁ ĐƠN"
+            android:textColor="#323232"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ListItemBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <!-- Phần 4: Footer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tổng tiền hàng:"
+            android:textColor="@color/black"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tongTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200,000"
+            android:textColor="@color/black"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

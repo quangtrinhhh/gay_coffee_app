@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_tongQuan"
+        android:icon="@drawable/baseline_insert_chart_outlined_24"
+        android:title="Tổng quan" />
+    <item
+        android:id="@+id/menu_hoaDon"
+        android:icon="@drawable/baseline_pending_actions_24"
+        android:title="Hoá đơn" />
+    <item
+        android:id="@+id/menu_hangHoa"
+        android:icon="@drawable/baseline_view_in_ar_24"
+        android:title="Hàng hoá" />
+    <item
+        android:id="@+id/menu_thongBao"
+        android:icon="@drawable/baseline_notifications_none_24"
+        android:title="Thông báo" />
+    <item
+        android:id="@+id/menu_nhieuHon"
+        android:icon="@drawable/baseline_menu_24"
+        android:title="Nhiều hơn" />
+</menu>

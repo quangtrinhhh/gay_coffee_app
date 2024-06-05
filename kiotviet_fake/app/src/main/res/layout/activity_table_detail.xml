@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TableDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F6F6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/btnCancel"
+                android:layout_width="33dp"
+                android:layout_height="25dp"
+                android:src="@drawable/close" />
+
+            <TextView
+                android:id="@+id/txtCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/btnNotification"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_icon"
+                android:src="@drawable/dots" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_title_detail_1"
+                android:src="@drawable/profits" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/btn.doiBan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_title_detail"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/txtNameTable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mang về"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/next" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_title_detail"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/price_tag" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Bảng giá chung"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"></androidx.recyclerview.widget.RecyclerView>
+
+            <ImageView
+                android:id="@+id/btnThem"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="320dp"
+                android:layout_marginTop="450dp"
+                android:background="@drawable/bg_plus"
+                android:padding="20dp"
+                android:src="@drawable/plus"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1sp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="15dp">
+
+            <TextView
+                android:id="@+id/txtQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Tổng tiền"
+                android:textColor="#505050"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTotalPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnTamTinh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn"
+                    android:backgroundTint="#A6A6A6"
+                    android:gravity="center"
+                    android:text="Xem tạm tính"
+                    android:textAllCaps="false"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/btnThanhToan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn"
+                    android:backgroundTint="#4CAF50"
+                    android:gravity="center"
+                    android:text="Thanh toán"
+                    android:textAllCaps="false"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/btnThongBao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn"
+                    android:backgroundTint="#AAC0FF"
+                    android:gravity="center"
+                    android:text="Thông báo"
+                    android:textAllCaps="false"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_loading"
+        android:padding="180dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

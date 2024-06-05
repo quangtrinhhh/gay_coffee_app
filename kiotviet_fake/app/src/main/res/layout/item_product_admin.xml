@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="15dp">
+
+
+    <RelativeLayout
+        android:id="@+id/imgProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_restaurant"
+            android:src="@drawable/restaurant"
+            android:visibility="visible" />
+
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="55dp"
+            android:layout_height="80dp"
+            android:visibility="gone"
+            android:layout_marginLeft="25dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@id/imgProduct"
+        android:text="Sửa chua đá"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="9dp"
+        android:layout_toRightOf="@id/imgProduct"
+        android:text="18,000"
+        android:textColor="@color/black"
+        android:textFontWeight="1"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txtMaSanPham"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@id/imgProduct"
+        android:text="SP00010"
+        android:textColor="@color/black"
+        android:textSize="13dp" />
+
+
+
+</RelativeLayout>

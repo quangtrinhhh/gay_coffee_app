@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.AdminNhanVienUpdateAndInsertActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AdminNhanVienDetailActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".activities.AdminNhanVienActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".activities.PhongBanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ChangerCategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AdminProductUpdateAndInsertActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AdminProductDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.FragmentAdminNhieuHon"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.FragmentAdminThongBao"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.FragmentAdminHangHoa"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.FragmentAdminHoaDon"
+            android:exported="false" />
+        <activity
+            android:name=".fragments.FragmentAdminTongQuan"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.XemTamTinhActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SingleGraftActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.TableListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.TachDonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.InformationOderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ChangeTableItems"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ChangeTable"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DetailBillActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.EndOfDayReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ProductDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.OrderProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.TableDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Notification"
+            android:exported="false" />
+    </application>
+
+</manifest>

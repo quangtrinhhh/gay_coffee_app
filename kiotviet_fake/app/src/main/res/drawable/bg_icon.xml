@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#F5F5F5" /> <!-- Độ trong suốt của màu nền -->
+    <corners android:radius="500dp" /> <!-- Bo tròn góc với bán kính 17dp -->
+    <padding android:left="7dp"
+        android:top="7dp"
+        android:right="7dp"
+        android:bottom="7dp" /> <!-- Padding cho shape -->
+</shape>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/menu_background">
+    <item
+        android:id="@+id/thong_tin_DH"
+        android:title="Thông tin đơn hàng"
+        android:icon="@drawable/baseline_report_gmailerrorred_24"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/Gop_ban"
+        android:title="Gộp bàn"
+        android:icon="@drawable/baseline_backup_table_24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/tach_don"
+        android:title="Tách đơn"
+        android:icon="@drawable/baseline_flip_24"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/huy_don"
+        android:title="Hủy đơn"
+        android:icon="@drawable/baseline_free_cancellation_24"
+        app:showAsAction="always"/>
+</menu>
